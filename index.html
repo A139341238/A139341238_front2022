@@ -12,6 +12,7 @@
     <title>Bon app</title> <!--title of page-->
 </head>
 <body>
+<div id="container-fluid">
     <header>
         <h1><span>"</span>Bon app<span>"</span></h1>  <!--Name of the page-->
         <nav>
@@ -21,7 +22,7 @@
                 <li><a href="#contact">CONTACT</a></li>  <!--link to chapter of page-->
             </ul>
         </nav>
-        <button>DARK</button>  <!--button dark mode-->
+        <button id="dark">DARK</button>  <!--button dark mode-->
         <!--end of header-->
     </header>
     <main>
@@ -52,28 +53,91 @@
         </section>
         <section id="blog">
             <h2>BLOG</h2>
-            <article>
-                <div></div><!--I put div because I want to put background-size: cover-->
-                <h3>UN SUPER TITRE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda atque debitis eius eligendi error iure magnam maxime, natus, optio  pariatur placeat, recusandae repellat sapiente vitae. Nihil quam quibusdam unde?</p>
-            </article>
-            <article>
-                <div></div><!--I put div because I want to put background-size: cover-->
-                <h3>UN SUPER TITRE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda atque debitis eius eligendi error iure magnam maxime, natus, optio pariatur placeat, recusandae repellat sapiente vitae. Nihil quam quibusdam unde?</p>
-            </article>
-            <article>
-                <div></div>  <!--I put div because I want to put background-size: cover-->
-                <h3>UN SUPER TITRE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda atque debitis eius eligendi error iure magnam maxime, natus, optio pariatur placeat, recusandae repellat sapiente vitae. Nihil quam quibusdam unde?</p>
-            </article>
-            <article>
-                <div></div><!--I put div because I want to put background-size: cover-->
-                <h3>UN SUPER TITRE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda atque debitis eius eligendi error iure magnam maxime, natus, optio pariatur placeat, recusandae repellat sapiente vitae. Nihil quam quibusdam unde?</p>
-            </article>
+            <div class="container">
+                <article>
+                    <div></div><!--I put div because I want to put background-size: cover-->
+                    <h3>UN SUPER TITRE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda atque debitis eius eligendi error iure magnam maxime, natus, optio pariatur placeat, recusandae repellat sapiente vitae. Nihil quam quibusdam unde? lorem</p>
+                </article>
+                <article>
+                    <div></div><!--I put div because I want to put background-size: cover-->
+                    <h3>UN SUPER TITRE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda atque debitis eius eligendi error iure magnam maxime, natus, optio pariatur placeat, recusandae repellat sapiente vitae. Nihil quam quibusdam unde?</p>
+                </article>
+                <article>
+                    <div></div>  <!--I put div because I want to put background-size: cover-->
+                    <h3>UN SUPER TITRE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda atque debitis eius eligendi error iure magnam maxime, natus, optio pariatur placeat, recusandae repellat sapiente vitae. Nihil quam quibusdam unde?</p>
+                </article>
+                <article>
+                    <div></div><!--I put div because I want to put background-size: cover-->
+                    <h3>UN SUPER TITRE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda atque debitis eius eligendi error iure magnam maxime, natus, optio pariatur placeat, recusandae repellat sapiente vitae. Nihil quam quibusdam unde?</p>
+                </article>
+            </div>
         </section>
     </main>
+    <footer><!--start of footer-->
+        <form action="get">
+            <h2 id="contact">Formulaire de contact</h2><!--title of formulaire-->
+            <p id="link">Pour plus de détails vous pouvez consulter notre site <span><a
+                    href="https://www.edenschool.fr/">ici</a></span></p><!--link to eden school-->
+            <h3>information de contact</h3>
+            <fieldset><!--choix de l'âge-->
+                <legend>Quel est votre age</legend><!--your age-->
+                <div>
+                    <input type="radio" id="twelve" name="age">
+                    <label for="twelve">12-14</label>
+                </div>
+                <div>
+                    <input type="radio" id="fifteen" name="age">
+                    <label for="fifteen">15-17</label>
+                </div>
+                <div>
+                    <input type="radio" id="eighteen" name="age">
+                    <label for="eighteen">18-19</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="name">nom :</label><!--Required Field-->
+                <input type="text" id="name" required="">
+            </div>
+            <div>
+                <label for="mail">mail :</label><!--Required Field-->
+                <input type="email" id="mail" required="">
+            </div>
+
+            <h3>votre jeu préféré</h3>
+            <div id="console">
+                <label for="select-console">Choisissez une console</label>
+                <select name="select-console" id="select-console"><!--select your console-->
+                    <option value="choose">--Choisissez une console--</option>
+                    <option value="switch">Nintendo switch</option>
+                    <option value="ps4">playstation 4</option>
+                    <option value="xbox">xbox one</option><!--choice of console-->
+                </select>
+            </div>
+            <div id="jeu">
+                <label for="select-jeu">Choisissez un jeu</label><!--select your game-->
+                <select name="select-jeu" id="select-jeu">
+                    <option value="choose">--Choisissez un jeu--</option>
+                    <option value="fortnite">fortnite</option>
+                    <option value="gta">GTA</option><!--choice of game-->
+                    <option value="minecraft">minecraft</option>
+                </select>
+            </div>
+            <h3>Votre message</h3><!--what do you want to right-->
+            <label for="form-text"></label>
+            <textarea name="form-text" id="form-text" cols="30" rows="10"
+                      placeholder="Saisissz votre message"></textarea>
+            <div id="cryptage">
+                <label for="password">cryptage du message :</label>
+                <input type="password" id="password"><!--password-->
+            </div>
+            <input type="submit" value="Envoyer votre message" id="submit">
+        </form>
+    </footer>
+</div><!--end of footer-->
 <script src="assets/js/script.js"></script> <!--script-->
 </body>
 </html>
