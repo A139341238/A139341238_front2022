@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* Import font-family */
+
+:root{/* colors of variables */
+    --dark: #2D3142;
+    --blue: #4F5D75;
+    --grey: #BFC0CO;
+    --light-grey: #EAEBEB;
+    --orange: #EF8354;
+    --white: #FFFFFF;
+}
+header{
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: var(--dark) 2px solid;
+}
+nav a{
+    color: var(--white);
+}
+h1{
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+}
+nav ul li{
+    list-style: none;
+    margin: 10px;
+}
+h1 span{
+    color: var(--orange);
+}
+header button{ /* dark btn */
+    color: var(--white);
+    background-color: var(--dark);
+    border-radius: 7px;
+    padding: 5px;
+}
+/* header */
+#abonnement{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#abonnement table{ /* table */
+    text-align: center;
+    border: 1px var(--dark) solid;
+}
+#abonnement table td{
+    width: 15rem;
+    padding: 10px 4px;
+    border: 1px var(--dark) solid
+}
+#abonnement table tr:first-of-type, #abonnement table tr:last-of-type{
+    background-color: var(--blue);
+    color: var(--white);
+}/* abonnement */
+#plats article{
+    display: flex;
+    width: 85%;
+    border-radius: 15px;
+    margin: 5px;
+}
+#plats .container img{
+    width: 100%;
+    object-fit: cover;
+    height: 17vh;
+    border-radius: 15px;
+}
+#plats #all-plats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+#plats .container{/* container img of plats */
+    width: 100%;
+    margin: 0 15px 0 0;
+    display: flex;
+    align-items: center;
+}
+#plats p{
+    text-align: center;
+    width: 100%;
+}
+#plats article:first-of-type, #plats article:nth-of-type(3), #plats article:last-of-type{
+    background-color: var(--light-grey);
+}
+#parallax{/* effect parallax */
+    background: url("../../assets/img/img-12.jpg") no-repeat fixed center;
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+}
+#blog{/* blog */
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+#blog article{/* box-shadow of card */
+    box-shadow: 0 0 15px 3px rgba(0,0,0,0.3);
+    text-align: center;
+}
+#blog article div, #parallax{
+    height: 13vh;
+}
+#blog article:first-of-type div{
+    background: url("../../assets/img/pic01.jpg") no-repeat center;
+    background-size: cover;
+}
+#blog article:nth-of-type(2) div{
+    background: url("../../assets/img/pic02.jpg") no-repeat;
+    background-size: cover;
+}
+#blog article:nth-of-type(3) div{
+    background: url("../../assets/img/pic03.jpg") no-repeat;
+    background-size: cover;
+}
+#blog article:last-of-type div{/* background of card */
+    background: url("../../assets/img/pic04.jpg") no-repeat center;
+    background-size: cover;
+}
